@@ -22,4 +22,15 @@ class Peserta_model extends CI_Model {
         $this->db->where('id_peserta', $id);
         return $this->db->delete('peserta_pelatihan');
     }
+
+	public function count_all_peserta() {
+		return $this->db->count_all('peserta_pelatihan');
+	}
+	
+	public function get_peserta_pagination($limit, $start) {
+		$this->db->limit($limit, $start);
+		$query = $this->db->get('peserta_pelatihan');
+		return $query->result_array();
+	}
+	
 }

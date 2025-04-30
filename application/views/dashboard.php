@@ -53,6 +53,11 @@
         <th>No</th>
         <th>NIK</th>
         <th>Nama</th>
+        <th>Jenis Kelamin</th>
+        <th>Tempat Lahir</th>
+        <th>Tangal Lahir</th>
+        <th>Alamat</th>
+        <th>No Telp</th>
         <th>Modul</th>
         <th>Aksi</th>
     </tr>
@@ -63,6 +68,11 @@
         <td><?= $no++ ?></td>
         <td><?= $row['nik_peserta'] ?></td>
         <td><?= $row['nama_peserta'] ?></td>
+        <td><?= $row['jenis_kelamin'] ?></td>
+        <td><?= $row['tempat_lahir'] ?></td>
+        <td><?= $row['tanggal_lahir'] ?></td>
+        <td><?= $row['alamat'] ?></td>
+        <td><?= $row['no_telp'] ?></td>
         <td><?= $row['modul_pelatihan'] ?></td>
         <td>
             <a href="<?= base_url('peserta/edit/'.$row['id_peserta']) ?>">Edit</a> |

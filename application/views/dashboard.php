@@ -25,12 +25,28 @@
             color: #fff;
             border-color: #007bff;
         }
+
+		.btn-tambah {
+            display: inline-block;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .btn-tambah:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
 
 <h2>Selamat datang, <?= $username ?></h2>
 <p>Total Data: <strong><?= $total_rows ?></strong></p>
+
+<a href="<?= base_url('welcome/tambah_peserta') ?>" class="btn-tambah">+ Tambah Peserta</a>
+
 
 <table border="1" cellpadding="5" cellspacing="0">
     <tr>
